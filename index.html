@@ -40,7 +40,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#necampNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -122,7 +122,7 @@
                         <h3>React Lake Campground</h3>
                         <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
-                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" />
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Thumbnail" />
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png"/>
+                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Thumbnail"/>
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
                         <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
@@ -145,13 +145,11 @@
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
-                    <div class="card-header bg-info text-white">
-                        <h3>Reserve a Campsite</h3>
-                    </div>
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label">Number of Campers</label>
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers">
                                         <option>Select...</option>
@@ -172,7 +170,7 @@
                             </div>
                             <div class="row form-group">
                                 <div class="col">
-                                    <button class="btn btn-primary" type="Submit">Search</button>
+                                    <button class="btn btn-primary" type="submit">Search</button>
                                 </div>
                             </div> 
                         </form>
